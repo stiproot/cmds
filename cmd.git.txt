@@ -1,0 +1,9 @@
+ssh -T git@bitbucket.org
+
+git remote -v
+--output
+origin	https://stipsmoosh@bitbucket.org/stipsmoosh/asq.git (fetch)
+origin	https://stipsmoosh@bitbucket.org/stipsmoosh/asq.git (push)
+--
+
+git remote set-url origin git@bitbucket.org:stipsmoosh/asq.git

@@ -1,0 +1,15 @@
+docker images
+
+docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine
+
+docker ps
+
+docker exec -it postgres-0 bash
+
+psql -h localhost -p 5432 -U postgres
+
+psql -U postgres
+
+
+\CONNECT my_database
+CREATE EXTENSION "uuid-ossp";

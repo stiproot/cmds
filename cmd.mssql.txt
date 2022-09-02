@@ -1,0 +1,21 @@
+sudo wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
+sudo add-apt-repository "$(wget -qO- https://packages.microsoft.com/config/ubuntu/18.04/mssql-server-2019.list)"
+
+sudo apt-get install -y mssql-server
+
+sudo /opt/mssql/bin/mssql-conf setup
+
+systemctl status mssql-server --no-pager
+
+cli:
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
+curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+
+sudo apt-get install mssql-tools
+
+ /usr/share/doc/msodbcsql17/LICENSE.txt.
+
+sqlcmd -S localhost -U SA -P '5t17@5q1'
+

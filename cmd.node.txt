@@ -1,0 +1,16 @@
+n:
+sudo npm install n -g
+
+For the latest stable version:
+sudo n stable
+
+For the latest version:
+sudo n latest
+
+nvm:
+nvm install v12.18.1
+
+option 2-----------------------------------------------------------
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+source ~/.bashrc
+nvm install node

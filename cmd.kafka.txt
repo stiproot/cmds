@@ -1,0 +1,17 @@
+tar -xvf kafka_2.13-2.7.0.tgz 
+
+.bashrc
+export PATH=/home/simon/App/kafka_2.13-2.7.0/bin:$PATH
+
+mkdir data/zookeeper
+
+[config/zookeeper.properties]
+dataDir=/home/simon/App/kafka_2.13-2.7.0/data/zookeeper
+
+mkdir data/kafka
+
+[config/server.properties]
+log.dirs=/home/simon/App/kafka_2.13-2.7.0/data/kafka
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties 

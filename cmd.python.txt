@@ -1,0 +1,16 @@
+sudo apt install python3-pip
+pip --version
+>pip 20.1.1 from /usr/lib/python3/dist-packages/pip (python 3.8)
+
+pip install virtualenv
+>WARNING: The script virtualenv is installed in '/home/simon/.local/bin' which is not on PATH.
+>Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+/home/simon/.local/bin/virtualenv test
+>created virtual environment CPython3.8.6.final.0-64 in 473ms
+>  creator CPython3Posix(dest=/home/simon/Code/virtualenvs/test, clear=False, no_vcs_ignore=False, global=False)
+>  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/simon/.local/share/virtualenv)
+>    added seed packages: pip==21.0.1, setuptools==52.0.0, wheel==0.36.2
+>  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+

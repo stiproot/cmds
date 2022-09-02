@@ -1,0 +1,5 @@
+ionic start
+
+ionic serve
+
+ionic lab

@@ -1,0 +1,6 @@
+dotnet ef --version
+
+dotnet tool update --global dotnet-ef
+
+dotnet ef dbcontext scaffold "server=localhost;database=ASQ;user=asq_dbaccess;password=asq@my5q1" MySql.EntityFrameworkCore -o Models --force
+
