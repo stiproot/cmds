@@ -1,0 +1,5 @@
+psql -h localhost -p 5432 -U postgres
+psql -U postgres
+
+\CONNECT my_database
+CREATE EXTENSION "uuid-ossp";
