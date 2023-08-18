@@ -1,0 +1,24 @@
+# is the -it necessary here?
+docker run --name py-tmp-0 -it --detach python:3.11.4-alpine3.18
+docker exec -it py-tmp-0 sh
+docker run --name py-tmp-1 -p 8000:8080 -it --detach img-py-tmp-0
+docker build -t img-py-tmp-0 .
+docker commit container-name image-name:0.0.1
+
+# commands run in the container
+uvicorn main:app --host 0.0.0.0 --port 8000
+nginx
+
+------------------------------------------------------------------------------------
+
+# reload configuration at runtime. master prompts workers.
+nginx -s reload
+/etc/nginx/http.d/default.conf
+------------------------------------------------------------------------------------
+
+docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres:alpine
+docker run -it --entrypoint /bin/sh 01381abd3e19
+docker images
+docker image list
+docker exec -it postgres-0 bash
+
